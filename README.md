@@ -13,7 +13,7 @@ $ pip install pelican markdown
 
 ## 2. Write
 
-Within `content` repository. Only `Title` and `Date` metadata are required.
+Within `content` folder. Only `Title` and `Date` metadata are required.
 
 
 ## 3. Generate
