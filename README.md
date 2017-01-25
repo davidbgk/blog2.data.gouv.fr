@@ -4,16 +4,24 @@ An attempt for an uncluttered Pelican (harder than expected…)
 
 ## 1. Install
 
-Virtualenv?
+Make a virtualenv
 
 ```shell
+$ python3 -m venv venv
+```
+
+Install dependencies
+
+```shell
+$ source venv/bin/activate
 $ pip install -r requirements.pip
 ```
 
 
 ## 2. Write
 
-Within `content` folder. Only `Title` and `Date` metadata are required.
+Within `content` folder.
+Only `Title` and `Date` metadata are required.
 
 
 ## 3. Generate
@@ -22,7 +30,7 @@ Within `content` folder. Only `Title` and `Date` metadata are required.
 $ make html serve
 ```
 
-Open `http://localhost:8000/`
+Open [http://localhost:8000/](http://localhost:8000/)
 
 
 ## 4. Iterate
