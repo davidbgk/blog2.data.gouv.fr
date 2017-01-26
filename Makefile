@@ -23,9 +23,11 @@ clean:
 
 serve:
 ifdef PORT
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
+	@echo "Publishing on http://localhost:$(PORT)"
+	@cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+	@echo "Publishing on http://localhost:8000"
+	@cd $(OUTPUTDIR) && $(PY) -m pelican.server
 endif
 
 .PHONY: html help clean serve
