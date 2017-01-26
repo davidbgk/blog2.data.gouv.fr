@@ -7,7 +7,7 @@ An attempt for an uncluttered Pelican (harder than expected…)
 Virtualenv?
 
 ```shell
-$ pip install pelican markdown
+$ pip install -r requirements.pip
 ```
 
 
